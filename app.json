@@ -12,14 +12,30 @@
       "supportsTablet": true
     },
     "android": {
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDlzWyFchAInNFLUhX-CZFX63M1TAu8MXo"
+        }
+      },
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#a1adb2",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.SEND_SMS",
+        "android.permission.READ_CONTACTS",
+        "android.permission.WRITE_CONTACTS"
+      ],
+      "package": "com.x1uiscc13.SafeTrack",
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "output": "static",
@@ -27,6 +43,25 @@
     },
     "plugins": [
       "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysPermission": "Necesitamos tu ubicación para emergencias.",
+          "locationWhenInUsePermission": "Necesitamos tu ubicación para mostrar el mapa."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Permite que SafeTrack use la cámara para capturar evidencia."
+        }
+      ],
+      [
+        "expo-contacts",
+        {
+          "contactsPermission": "Permite a SafeTrack acceder a tus contactos para notificar emergencias."
+        }
+      ],
       [
         "expo-splash-screen",
         {
@@ -38,11 +73,19 @@
             "backgroundColor": "#000000"
           }
         }
-      ]
+      ],
+      "@react-native-community/datetimepicker",
+      "expo-secure-store"
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "28c146d0-be7a-419f-8685-cf2143c969a7"
+      }
     }
   }
 }

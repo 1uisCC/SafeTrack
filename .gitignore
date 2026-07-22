@@ -41,3 +41,6 @@ app-example
 # generated native folders
 /ios
 /android
+services/firebaseConfig.js 
+services/cloudinaryConfig.js 
+google-services.json 

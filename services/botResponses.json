@@ -1,0 +1,25 @@
+{
+  "keywords": [
+    { "trigger": ["emergencia", "ayuda", "peligro", "auxilio", "ayudame"], "response": "¡Mantén la calma! He detectado una situación de emergencia. ¿Deseas que envíe tu ubicación actual a tus contactos de emergencia?" },
+    { "trigger": ["caida", "me cai", "caidas", "resbalon"], "response": "Lamento escuchar eso. ¿Te encuentras bien o necesitas asistencia médica inmediata?" },
+    { "trigger": ["hola", "buenos dias", "buenas tardes", "hey"], "response": "Hola, soy tu asistente de seguridad de SafeTrack. Estoy aquí para monitorear tu bienestar. ¿En qué puedo apoyarte?" },
+    { "trigger": ["ubicacion", "donde estoy", "ubicame"], "response": "Estoy rastreando tu posición en tiempo real. Tu seguridad es mi prioridad. ¿Ocurre algo inusual en tu zona?" },
+    { "trigger": ["contactos", "familia", "emergencia", "quien recibe mi aviso"], "response": "Tus alertas están configuradas para enviarse a tus contactos de emergencia registrados en la sección de Ajustes." },
+    { "trigger": ["ajustes", "configuracion", "configurar"], "response": "Puedes gestionar tu perfil y la detección de caídas en la pantalla de Ajustes de la aplicación." },
+    { "trigger": ["gracias", "listo", "esta bien", "ok"], "response": "De nada. Sigo atento a cualquier situación. ¡Cuídate!" },
+    { "trigger": ["es seguro", "esta zona es segura", "zona de riesgo"], "response": "Revisa el mapa en la pantalla principal para ver los puntos marcados como zonas de riesgo. Evita transitar por ellos si no es necesario." },
+    { "trigger": ["que haces", "funciones", "para que sirves"], "response": "Monitoreo sensores para detectar caídas, permito enviar alertas de emergencia y ayudo a gestionar tus contactos de seguridad." },
+    { "trigger": ["bateria", "cuanta bateria tengo", "energia"], "response": "Asegúrate de mantener tu teléfono cargado para que los sensores de seguridad funcionen correctamente durante todo el día." },
+    { "trigger": ["salud", "me siento mal", "mareado"], "response": "Si no te sientes bien, por favor notifica a alguien cercano o usa el botón de emergencia para alertar a tus contactos." },
+    { "trigger": ["como reportar", "reportar"], "response": "Si detectas una zona de peligro, puedes ver el mapa para identificarla. Estoy aquí para cualquier duda sobre los reportes." },
+    { "trigger": ["cerrar sesion", "salir"], "response": "Puedes cerrar sesión desde la sección de ajustes si es necesario, pero recuerda que dejaré de monitorear tu seguridad." },
+    { "trigger": ["internet", "conexion", "wifi"], "response": "La mayoría de mis funciones básicas funcionan localmente, pero para enviar alertas SMS o actualizar datos, se requiere conexión." },
+    { "trigger": ["como pongo mi foto", "foto", "perfil"], "response": "Puedes cambiar tu foto de perfil entrando a la pantalla de Ajustes y tocando sobre el icono de usuario." },
+    { "trigger": ["quien eres", "nombre"], "response": "Soy SafeTrack, tu asistente inteligente de seguridad personal." },
+    { "trigger": ["hora", "que hora es", "fecha"], "response": "La hora actual es monitoreada por el sistema. Recuerda mantener tu teléfono con la hora actualizada." },
+    { "trigger": ["tutorial", "ayuda de uso", "guia"], "response": "Mi función principal es la detección de caídas. Activa el interruptor en Ajustes y yo me encargaré de vigilar." },
+    { "trigger": ["policia", "llamar a la policia"], "response": "Si es una emergencia real, por favor marca al número de servicios de emergencia de tu país (911) inmediatamente." },
+    { "trigger": ["adios", "hasta luego"], "response": "Hasta luego. Recuerda que sigo operando en segundo plano para tu seguridad." }
+  ],
+  "default": "No comprendo bien tu consulta. ¿Puedes decirme algo relacionado con tu seguridad o configuración de la app?"
+}
